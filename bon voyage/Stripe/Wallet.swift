@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import Stripe
+
+class Wallet {
+    
+    static let instance = Wallet()
+    private init() { }
+    
+    var customerContext : STPCustomerContext!
+}

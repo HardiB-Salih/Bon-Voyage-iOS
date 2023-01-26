@@ -17,7 +17,7 @@ class ShadowCardView: UIView {
         layer.shadowOpacity = 0.6
         layer.shadowOffset = CGSize(width: 0, height: 0)
     }
-
+    
     @IBInspectable var cornerRadius: CGFloat = 5 {
         didSet {
             self.layer.cornerRadius = cornerRadius
@@ -25,14 +25,14 @@ class ShadowCardView: UIView {
     }
     
     @IBInspectable var borderWidth: CGFloat = 0 {
-           didSet {
-               self.layer.borderWidth = borderWidth
-           }
-       }
-       
-       @IBInspectable var borderColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) {
-           didSet {
-               self.layer.borderColor = borderColor.cgColor
-           }
-       }
+        didSet {
+            self.layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) {
+        didSet {
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
 }

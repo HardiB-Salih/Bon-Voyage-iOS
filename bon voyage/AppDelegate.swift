@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import FirebaseCore
+import Stripe
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        StripeAPI.defaultPublishableKey = "YOUR PUBLISH KEY"
+        FirebaseApp.configure()
         return true
     }
 
